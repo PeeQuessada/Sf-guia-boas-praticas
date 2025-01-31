@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     submenuToggles.forEach(toggle => {
       toggle.addEventListener('click', function () {
+        this.classList.toggle('active');
         const submenu = this.nextElementSibling;
         submenu.classList.toggle('active');
       });

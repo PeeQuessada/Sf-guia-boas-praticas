@@ -1,60 +1,121 @@
 /* Estilos Gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
+    background-color: #f5f5f5;
+    color: #333;
   }
   
   /* Menu Lateral */
   .sidebar {
-    width: 250px;
-    background: #333;
+    width: 280px;
+    background: #2c3e50;
     color: #fff;
-    padding: 20px;
     height: 100vh;
     box-sizing: border-box;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   }
   
-  .sidebar h2 {
-    margin-top: 0;
+  .sidebar-header {
+    padding: 20px;
+    background: #34495e;
+    border-bottom: 1px solid #2c3e50;
   }
   
-  .sidebar ul {
+  .sidebar-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .menu {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   
-  .sidebar ul li {
-    margin: 15px 0;
-  }
-  
-  .sidebar ul li a {
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
     color: #fff;
     text-decoration: none;
+    transition: background 0.3s ease;
   }
   
-  .sidebar ul li .submenu-toggle {
+  .menu-item:hover {
+    background: #34495e;
+  }
+  
+  .submenu-toggle {
     cursor: pointer;
-    color: #fff;
   }
   
-  .sidebar ul li .submenu {
+  .submenu-toggle .arrow {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .submenu-toggle.active .arrow {
+    transform: rotate(180deg);
+  }
+  
+  .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: none;
-    margin-left: 20px;
+    background: #34495e;
   }
   
-  .sidebar ul li .submenu.active {
+  .submenu.active {
     display: block;
+  }
+  
+  .submenu-item {
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease;
+  }
+  
+  .submenu-item:hover {
+    background: #2c3e50;
   }
   
   /* Conteúdo Principal */
   .content {
     flex: 1;
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box;
+    background: #fff;
+    margin-left: 280px;
   }
   
-  .content header h1 {
-    margin-top: 0;
+  .content-header {
+    margin-bottom: 30px;
+  }
+  
+  .content-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+  
+  .content-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
   }

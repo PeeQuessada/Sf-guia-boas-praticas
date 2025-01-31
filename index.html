@@ -5,40 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guia de Boas Práticas</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Menu Lateral -->
   <aside class="sidebar">
-    <h2>Menu</h2>
-    <ul>
-      <li><a href="index.html">Página Inicial</a></li>
+    <div class="sidebar-header">
+      <h2>Guia de Boas Práticas</h2>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html" class="menu-item">🏠 Página Inicial</a></li>
       <li>
-        <span class="submenu-toggle">Padrões Apex</span>
+        <div class="menu-item submenu-toggle">
+          <span>📦 Padrões Apex</span>
+          <span class="arrow">▼</span>
+        </div>
         <ul class="submenu">
-          <li><a href="padroes-apex/factory.html">Factory</a></li>
-          <li><a href="padroes-apex/builder.html">Builder</a></li>
+          <li><a href="padroes-apex/factory.html" class="submenu-item">Factory</a></li>
+          <li><a href="padroes-apex/builder.html" class="submenu-item">Builder</a></li>
         </ul>
       </li>
       <li>
-        <span class="submenu-toggle">Padrões LWC</span>
+        <div class="menu-item submenu-toggle">
+          <span>⚡ Padrões LWC</span>
+          <span class="arrow">▼</span>
+        </div>
         <ul class="submenu">
-          <li><a href="padroes-lwc/callback-async.html">Callback (Async/Await)</a></li>
-          <li><a href="padroes-lwc/boas-praticas.html">Boas Práticas</a></li>
+          <li><a href="padroes-lwc/callback-async.html" class="submenu-item">Callback (Async/Await)</a></li>
+          <li><a href="padroes-lwc/boas-praticas.html" class="submenu-item">Boas Práticas</a></li>
         </ul>
       </li>
       <li>
-        <span class="submenu-toggle">Padrões GIT</span>
+        <div class="menu-item submenu-toggle">
+          <span>🔧 Padrões GIT</span>
+          <span class="arrow">▼</span>
+        </div>
         <ul class="submenu">
-          <li><a href="padroes-git/mensagem-commit.html">Mensagem de Commit</a></li>
-          <li><a href="padroes-git/nome-branch.html">Nome de Branch</a></li>
-          <li><a href="padroes-git/git-hook.html">Git Hook</a></li>
+          <li><a href="padroes-git/mensagem-commit.html" class="submenu-item">Mensagem de Commit</a></li>
+          <li><a href="padroes-git/nome-branch.html" class="submenu-item">Nome de Branch</a></li>
+          <li><a href="padroes-git/git-hook.html" class="submenu-item">Git Hook</a></li>
         </ul>
       </li>
       <li>
-        <span class="submenu-toggle">Padrões de Indentação</span>
+        <div class="menu-item submenu-toggle">
+          <span>📐 Padrões de Indentação</span>
+          <span class="arrow">▼</span>
+        </div>
         <ul class="submenu">
-          <li><a href="padroes-identacao/eslint-apex.html">ESLint para Apex</a></li>
-          <li><a href="padroes-identacao/eslint-lwc.html">ESLint para LWC</a></li>
+          <li><a href="padroes-identacao/eslint-apex.html" class="submenu-item">ESLint para Apex</a></li>
+          <li><a href="padroes-identacao/eslint-lwc.html" class="submenu-item">ESLint para LWC</a></li>
         </ul>
       </li>
     </ul>
@@ -46,11 +61,10 @@
 
   <!-- Conteúdo Principal -->
   <main class="content">
-    <header>
-      <h1>Guia de Boas Práticas</h1>
+    <header class="content-header">
+      <h1>Bem-vindo ao Guia de Boas Práticas!</h1>
     </header>
-    <section>
-      <h2>Bem-vindo ao Guia de Boas Práticas!</h2>
+    <section class="content-section">
       <p>Este guia contém padrões e boas práticas para desenvolvimento em Apex, LWC, GIT e indentação.</p>
     </section>
   </main>
