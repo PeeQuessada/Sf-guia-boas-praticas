@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padrões Apex - Factory</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Padrões Apex - Factory</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Voltar à Página Inicial</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>O que é o Padrão Factory?</h2>
+      <p>O padrão Factory é usado para criar objetos sem especificar a classe exata do objeto que será criado.</p>
+      <h3>Exemplo:</h3>
+      <pre><code>
+public class AccountFactory {
+    public static Account createAccount(String name) {
+        Account acc = new Account();
+        acc.Name = name;
+        return acc;
+    }
+}
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

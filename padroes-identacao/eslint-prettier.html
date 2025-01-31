@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESLint e Prettier</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Configurações ESLint e Prettier</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Voltar à Página Inicial</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>O que é ESLint e Prettier?</h2>
+      <p>ESLint é uma ferramenta para identificar problemas no código JavaScript. Prettier é um formatador de código.</p>
+      <h3>Configuração Básica:</h3>
+      <pre><code>
+// .eslintrc.js
+module.exports = {
+  extends: ['eslint:recommended', 'plugin:@salesforce/eslint-config-lwc/recommended'],
+  rules: {
+    'no-console': 'off',
+  },
+};
+
+// .prettierrc
+{
+  "singleQuote": true,
+  "trailingComma": "es5"
+}
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
