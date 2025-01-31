@@ -7,31 +7,55 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Guia de Boas Práticas</h1>
-    <nav>
-      <ul>
-        <li><a href="padroes-apex/factory.html">Padrões Apex - Factory</a></li>
-        <li><a href="padroes-apex/classes.html">Padrões Apex - Classes</a></li>
-        <li><a href="padroes-apex/triggers.html">Padrões Apex - Triggers</a></li>
-        <li><a href="padroes-lwc/callback-apex.html">Padrões LWC - Callback Apex</a></li>
-        <li><a href="padroes-lwc/boas-praticas.html">Padrões LWC - Boas Práticas</a></li>
-        <li><a href="padroes-git/nome-commit.html">Padrões GIT - Nome de Commit</a></li>
-        <li><a href="padroes-git/nome-branch.html">Padrões GIT - Nome de Branch</a></li>
-        <li><a href="padroes-git/config-arquivo.html">Padrões GIT - Configurar Arquivo</a></li>
-        <li><a href="padroes-identacao/definicoes.html">Padrões de Indentação - Definições</a></li>
-        <li><a href="padroes-identacao/eslint-prettier.html">Padrões de Indentação - ESLint/Prettier</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+  <!-- Menu Lateral -->
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="index.html">Página Inicial</a></li>
+      <li>
+        <span class="submenu-toggle">Padrões Apex</span>
+        <ul class="submenu">
+          <li><a href="padroes-apex/factory.html">Factory</a></li>
+          <li><a href="padroes-apex/builder.html">Builder</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="submenu-toggle">Padrões LWC</span>
+        <ul class="submenu">
+          <li><a href="padroes-lwc/callback-async.html">Callback (Async/Await)</a></li>
+          <li><a href="padroes-lwc/boas-praticas.html">Boas Práticas</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="submenu-toggle">Padrões GIT</span>
+        <ul class="submenu">
+          <li><a href="padroes-git/mensagem-commit.html">Mensagem de Commit</a></li>
+          <li><a href="padroes-git/nome-branch.html">Nome de Branch</a></li>
+          <li><a href="padroes-git/git-hook.html">Git Hook</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="submenu-toggle">Padrões de Indentação</span>
+        <ul class="submenu">
+          <li><a href="padroes-identacao/eslint-apex.html">ESLint para Apex</a></li>
+          <li><a href="padroes-identacao/eslint-lwc.html">ESLint para LWC</a></li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- Conteúdo Principal -->
+  <main class="content">
+    <header>
+      <h1>Guia de Boas Práticas</h1>
+    </header>
     <section>
       <h2>Bem-vindo ao Guia de Boas Práticas!</h2>
       <p>Este guia contém padrões e boas práticas para desenvolvimento em Apex, LWC, GIT e indentação.</p>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
-  </footer>
+
+  <!-- Script para interação do menu -->
+  <script src="scripts/script.js"></script>
 </body>
 </html>

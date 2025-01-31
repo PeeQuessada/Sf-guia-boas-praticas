@@ -3,42 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ESLint e Prettier</title>
+  <title>Padrões Apex - Factory</title>
   <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Configurações ESLint e Prettier</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Voltar à Página Inicial</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h2>O que é ESLint e Prettier?</h2>
-      <p>ESLint é uma ferramenta para identificar problemas no código JavaScript. Prettier é um formatador de código.</p>
-      <h3>Configuração Básica:</h3>
-      <pre><code>
-// .eslintrc.js
-module.exports = {
-  extends: ['eslint:recommended', 'plugin:@salesforce/eslint-config-lwc/recommended'],
-  rules: {
-    'no-console': 'off',
-  },
-};
+  <!-- Menu Lateral -->
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="../index.html">Página Inicial</a></li>
+      <li>
+        <span class="submenu-toggle">Padrões Apex</span>
+        <ul class="submenu">
+          <li><a href="factory.html">Factory</a></li>
+          <li><a href="builder.html">Builder</a></li>
+        </ul>
+      </li>
+      <!-- Adicione os outros itens do menu aqui -->
+    </ul>
+  </aside>
 
-// .prettierrc
-{
-  "singleQuote": true,
-  "trailingComma": "es5"
-}
+  <!-- Conteúdo Principal -->
+  <main class="content">
+    <header>
+      <h1>Padrões Identacao - eslint</h1>
+    </header>
+    <section>
+        <h2>O que é ESLint e Prettier?</h2>
+        <p>ESLint é uma ferramenta para identificar problemas no código JavaScript. Prettier é um formatador de código.</p>
+        <h3>Configuração Básica:</h3>
+        <pre><code>
+  // .eslintrc.js
+  module.exports = {
+    extends: ['eslint:recommended', 'plugin:@salesforce/eslint-config-lwc/recommended'],
+    rules: {
+      'no-console': 'off',
+    },
+  };
+  
+  // .prettierrc
+  {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
       </code></pre>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
-  </footer>
+
+  <!-- Script para interação do menu -->
+  <script src="../scripts/script.js"></script>
 </body>
 </html>

@@ -7,15 +7,27 @@
   <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Padrões Apex - Factory</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Voltar à Página Inicial</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+  <!-- Menu Lateral -->
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="../index.html">Página Inicial</a></li>
+      <li>
+        <span class="submenu-toggle">Padrões Apex</span>
+        <ul class="submenu">
+          <li><a href="factory.html">Factory</a></li>
+          <li><a href="builder.html">Builder</a></li>
+        </ul>
+      </li>
+      <!-- Adicione os outros itens do menu aqui -->
+    </ul>
+  </aside>
+
+  <!-- Conteúdo Principal -->
+  <main class="content">
+    <header>
+      <h1>Padrões Apex - Factory</h1>
+    </header>
     <section>
       <h2>O que é o Padrão Factory?</h2>
       <p>O padrão Factory é usado para criar objetos sem especificar a classe exata do objeto que será criado.</p>
@@ -31,8 +43,8 @@ public class AccountFactory {
       </code></pre>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
-  </footer>
+
+  <!-- Script para interação do menu -->
+  <script src="../scripts/script.js"></script>
 </body>
 </html>
